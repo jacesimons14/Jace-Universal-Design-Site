@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Library Resources</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f4f4f4;
+    }
+    
+    /* Skip Navigation */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+    }
+    
+    .skip-link:focus {
+      top: 0;
+    }
+    
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    nav {
+      background: #34495e;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+    }
+    
+    nav a:hover {
+      background: #2c3e50;
+    }
+    
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    
+    section, article {
+      background: white;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 4px;
+    }
+    
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+    
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.5rem;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    caption {
+      font-weight: 600;
+      padding: 0.5rem;
+      background: #3498db;
+      color: white;
+    }
+    
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    
+    th {
+      background: #ecf0f1;
+      font-weight: 600;
+    }
+    
+    form {
+      max-width: 600px;
+    }
+    
+    fieldset {
+      border: 2px solid #3498db;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    legend {
+      font-weight: 600;
+      padding: 0 0.5rem;
+    }
+    
+    label {
+      display: block;
+      margin: 1rem 0 0.25rem;
+      font-weight: 600;
+    }
+    
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input:focus, select:focus, textarea:focus {
+      outline: 2px solid #3498db;
+    }
+    
+    button {
+      background: #3498db;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    
+    button:hover {
+      background: #2980b9;
+    }
+    
+    footer {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    .material-icons {
+      vertical-align: middle;
+      font-size: 20px;
+    }
+    
+    .required {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip Navigation -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+  
+  <header>
+    <h1>
+      <span class="material-icons" aria-hidden="true">local_library</span>
+      Boulder Public Library
+    </h1>
+  </header>
+  
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">
+        <span class="material-icons" aria-hidden="true">info</span>
+        About
+      </a></li>
+      <li><a href="#hours">
+        <span class="material-icons" aria-hidden="true">schedule</span>
+        Hours
+      </a></li>
+      <li><a href="#membership">
+        <span class="material-icons" aria-hidden="true">card_membership</span>
+        Join
+      </a></li>
+    </ul>
+  </nav>
+  
+  <main id="main">
+    
+    <article id="about">
+      <h2>About Our Library</h2>
+      <p>
+        The Boulder Public Library has served our community since 1965. We offer over 
+        50,000 books, digital resources, and community programs for all ages.
+      </p>
+      <p>
+        Our mission is to provide free access to information, foster literacy, and 
+        create a welcoming space for learning and discovery.
+      </p>
+    </article>
+    
+    <section id="hours">
+      <h2>
+        <span class="material-icons" aria-hidden="true">access_time</span>
+        Branch Hours
+      </h2>
+      
+      <table>
+        <caption>Weekly Operating Hours by Location</caption>
+        <thead>
+          <tr>
+            <th scope="col">Branch</th>
+            <th scope="col">Monday-Friday</th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Main Branch</td>
+            <td>9:00 AM - 8:00 PM</td>
+            <td>10:00 AM - 6:00 PM</td>
+            <td>12:00 PM - 5:00 PM</td>
+          </tr>
+          <tr>
+            <td>North Branch</td>
+            <td>10:00 AM - 7:00 PM</td>
+            <td>10:00 AM - 5:00 PM</td>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <td>East Branch</td>
+            <td>9:00 AM - 6:00 PM</td>
+            <td>9:00 AM - 4:00 PM</td>
+            <td>Closed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section id="membership">
+      <h2>
+        <span class="material-icons" aria-hidden="true">person_add</span>
+        Library Card Application
+      </h2>
+      
+      <form action="/submit" method="post">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+          
+          <label for="fname">
+            First Name <span class="required" aria-label="required">*</span>
+          </label>
+          <input type="text" id="fname" name="fname" required aria-required="true">
+          
+          <label for="lname">
+            Last Name <span class="required" aria-label="required">*</span>
+          </label>
+          <input type="text" id="lname" name="lname" required aria-required="true">
+          
+          <label for="email">
+            Email <span class="required" aria-label="required">*</span>
+          </label>
+          <input type="email" id="email" name="email" required aria-required="true">
+          
+          <label for="phone">
+            Phone Number <span class="required" aria-label="required">*</span>
+          </label>
+          <input type="tel" id="phone" name="phone" required aria-required="true">
+          
+          <label for="dob">
+            Date of Birth <span class="required" aria-label="required">*</span>
+          </label>
+          <input type="date" id="dob" name="dob" required aria-required="true">
+        </fieldset>
+        
+        <fieldset>
+          <legend>Card Type</legend>
+          
+          <label>
+            <input type="radio" name="card-type" value="adult" required>
+            Adult Card (Free)
+          </label>
+          
+          <label>
+            <input type="radio" name="card-type" value="student" required>
+            Student Card (Free)
+          </label>
+          
+          <label>
+            <input type="radio" name="card-type" value="senior" required>
+            Senior Card (Free)
+          </label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Interests</legend>
+          
+          <label>
+            <input type="checkbox" name="interests" value="fiction">
+            Fiction
+          </label>
+          
+          <label>
+            <input type="checkbox" name="interests" value="nonfiction">
+            Non-Fiction
+          </label>
+          
+          <label>
+            <input type="checkbox" name="interests" value="digital">
+            Digital Resources
+          </label>
+          
+          <label for="branch">
+            Preferred Branch <span class="required" aria-label="required">*</span>
+          </label>
+          <select id="branch" name="branch" required aria-required="true">
+            <option value="">Select a branch</option>
+            <option value="main">Main Branch</option>
+            <option value="north">North Branch</option>
+            <option value="east">East Branch</option>
+          </select>
+          
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" rows="3"></textarea>
+        </fieldset>
+        
+        <button type="submit">
+          <span class="material-icons" aria-hidden="true">send</span>
+          Submit Application
+        </button>
+      </form>
+    </section>
+    
+    <section>
+      <h2>Contact Us</h2>
+      <address>
+        <strong>Boulder Public Library</strong><br>
+        1001 Arapahoe Avenue<br>
+        Boulder, CO 80302<br>
+        Phone: <a href="tel:+13034415000">(303) 441-5000</a><br>
+        Email: <a href="mailto:library@boulderlibrary.org">library@boulderlibrary.org</a>
+      </address>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Boulder Public Library. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
