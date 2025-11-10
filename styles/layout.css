@@ -1,0 +1,163 @@
+/* 
+  Adobe Color Scheme - Accessible Palette
+  Primary: #2D5016 (Dark Green)
+  Secondary: #548235 (Medium Green)
+  Accent: #A9D18E (Light Green)
+  Background: #F2F2F2 (Light Gray)
+  Text: #1F1F1F (Near Black)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', serif;
+  line-height: 1.6;
+  color: #1F1F1F;
+  background-color: #F2F2F2;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #2D5016;
+}
+
+/* Desktop Layout - CSS Grid */
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "sidebar-left main sidebar-right"
+    "footer footer footer";
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+header {
+  grid-area: header;
+  background-color: #2D5016;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Navigation - Flexbox */
+nav {
+  grid-area: nav;
+  background-color: #548235;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #2D5016;
+}
+
+main {
+  grid-area: main;
+  background-color: white;
+  padding: 2rem;
+}
+
+main h2 {
+  color: #2D5016;
+}
+
+main h3 {
+  color: #548235;
+  margin-top: 1.5rem;
+}
+
+.sidebar-left {
+  grid-area: sidebar-left;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.sidebar-right {
+  grid-area: sidebar-right;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+aside h3 {
+  color: #2D5016;
+  font-size: 1.1rem;
+}
+
+aside ul {
+  list-style: none;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #2D5016;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer a {
+  color: #A9D18E;
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "main main"
+      "sidebar-left sidebar-right"
+      "footer footer";
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "sidebar-left"
+      "sidebar-right"
+      "footer";
+  }
+  
+  /* Nav vertical for mobile - thumb-able */
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav a {
+    padding: 1.25rem;
+    min-height: 48px;
+    text-align: center;
+  }
+}
