@@ -1,159 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jace Universal Design Site</title>
-    <style>
-      body {
-        font-family: "Funnel Display", serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 20px;
-        background-color: #f5f5f5;
-        color: #1b1b1b;
-      }
 
-      .container {
-        max-width: 800px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        background-color: #f5f5f5;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-      }
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jace Universal Design Site</title>
+  <style>
+    body {
+      font-family: "Funnel Display", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+      color: #1b1b1b;
+    }
 
-      header {
-        text-align: center;
-        border-bottom: 1px solid #dddddd;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
-        width: 100%;
-      }
+    .container {
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      background-color: #f5f5f5;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
 
-      h1 {
-        color: #1b1b1b;
-        font-size: 2.5em;
-        margin: 0;
-      }
+    header {
+      text-align: center;
+      border-bottom: 1px solid #dddddd;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+      width: 100%;
+    }
 
-      .subtitle {
-        color: #1b1b1b;
-        opacity: 0.5;
-        margin-top: 10px;
-      }
+    h1 {
+      color: #1b1b1b;
+      font-size: 2.5em;
+      margin: 0;
+    }
 
-      .section {
-        margin-bottom: 40px;
-      }
+    .subtitle {
+      color: #1b1b1b;
+      opacity: 0.5;
+      margin-top: 10px;
+    }
 
-      h2 {
-        color: #1b1b1b;
-        border-bottom: 1px solid #dddddd;
-        padding-bottom: 10px;
-        font-size: 1.8em;
-      }
+    .section {
+      margin-bottom: 40px;
+    }
 
+    h2 {
+      color: #1b1b1b;
+      border-bottom: 1px solid #dddddd;
+      padding-bottom: 10px;
+      font-size: 1.8em;
+    }
+
+    .about-me {
+      background-color: #fafafa;
+      padding: 20px;
+      border-left: 4px solid #1b1b1b;
+      margin: 20px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: auto;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .about-text {
+      text-align: justify;
+    }
+
+    @media (max-width: 600px) {
       .about-me {
-        background-color: #fafafa;
-        padding: 20px;
-        border-left: 4px solid #1b1b1b;
-        margin: 20px 0;
+        flex-direction: column;
+        align-items: center;
       }
 
-      .assignment-links {
-        list-style: none;
-        padding: 0;
-        margin: 40px 0 20px 0;
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
+      .profile-pic {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
       }
+    }
 
-      .assignment-links li {
-        flex: 1;
-        margin: 0;
-      }
+    .assignment-links {
+      list-style: none;
+      padding: 0;
+      margin: 40px 0 20px 0;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
 
-      .assignment-links a {
-        color: #1b1b1b;
-        text-decoration: none;
-        font-weight: bold;
-        display: block;
-        padding: 15px 20px;
-        text-align: center;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        clip-path: polygon(
-          0 0,
+    .assignment-links li {
+      flex: 1;
+      margin: 0;
+    }
+
+    .assignment-links a {
+      color: #1b1b1b;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      padding: 15px 20px;
+      text-align: center;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      clip-path: polygon(0 0,
           calc(100% - 12px) 0,
           calc(100% - 12px) 12px,
           100% 12px,
           100% 100%,
-          0 100%
-        );
-        max-width: 200px;
-      }
+          0 100%);
+      max-width: 200px;
+    }
 
-      .assignment-links li:last-child a {
-        border-right: none;
-      }
+    .assignment-links li:last-child a {
+      border-right: none;
+    }
 
-      .assignment-links a:hover,
-      .assignment-links a:focus {
-        background-color: #1b1b1b;
-        color: #ffffff;
-        outline: 3px solid #007acc;
-        outline-offset: 2px;
-      }
+    .assignment-links a:hover,
+    .assignment-links a:focus {
+      background-color: #1b1b1b;
+      color: #ffffff;
+      outline: 3px solid #007acc;
+      outline-offset: 2px;
+    }
 
-      .placeholder {
-        color: #888;
-        font-style: italic;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>Jace's Universal Design Site</h1>
-        <p class="subtitle">Web Design & Development Course</p>
-        <nav aria-label="Course assignments">
-          <ul class="assignment-links">
-            <li>
-              <a href="wikipedia/charles-barkley.html" aria-describedby="desc1"
-                >Wikipedia Article</a
-              >
-              <span class="placeholder" id="desc1" aria-hidden="true"></span>
-            </li>
-            <li>
-              <a href="semantic-page.html" aria-describedby="desc2">Semantic HTML Page</a>
-              <span class="placeholder" id="desc2" aria-hidden="true"></span>
-            </li>
-            <li>
-              <a href="accessible-layout-page.html" aria-describedby="desc3">Grid Layout</a>
-              <span class="placeholder" id="desc3" aria-hidden="true"></span>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    .placeholder {
+      color: #888;
+      font-style: italic;
+    }
+  </style>
+</head>
 
-      <main>
-        <section class="section">
-          <h2>About Me</h2>
-          <div class="about-me">
+<body>
+  <div class="container">
+    <header>
+      <h1>Jace's Universal Design Site</h1>
+      <p class="subtitle">Web Design & Development Course</p>
+      <nav aria-label="Course assignments">
+        <ul class="assignment-links">
+          <li>
+            <a href="wikipedia/charles-barkley.html" aria-describedby="assignment-1">Assignment 1: Wikipedia</a>
+            <span class="placeholder" id="assignment-1" aria-hidden="true"></span>
+          </li>
+          <li>
+            <a href="semantic-page.html" aria-describedby="assignment-2">Assignment 2: Semantic HTML</a>
+            <span class="placeholder" id="assingment-2" aria-hidden="true"></span>
+          </li>
+          <li>
+            <a href="accessible-layout-page.html" aria-describedby="assignment-3">Assignment 3: Grid Layout</a>
+            <span class="placeholder" id="assignment-3" aria-hidden="true"></span>
+          </li>
+          <li>
+            <a href="https://jacesimons14.github.io/Jace-Universal-Design-Final-Project/index.html"
+              aria-describedby="final-proj-2">Final Project 2: Universal Design Site</a>
+            <span class="placeholder" id="final-proj-2" aria-hidden="true"></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>About Me</h2>
+        <div class="about-me">
+          <img src="assets/jace.jpg" alt="Photo of Jace" class="profile-pic" />
+          <div class="about-text">
             <p>
               I'm Jace, a senior at CU Boulder, majoring in Computer Science and
               minoring in Business. I'm really into design, engineering, and
@@ -170,8 +199,10 @@
               more accessible to everyone.
             </p>
           </div>
-        </section>
-      </main>
-    </div>
-  </body>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
 </html>
