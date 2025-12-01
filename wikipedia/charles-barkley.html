@@ -1,559 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Charles Barkley - Wikipedia</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      /* Hide only visually, but have it available for screen readers: */
-      .sr-only {
-        border: 0;
-        clip: rect(0, 0, 0, 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-      }
 
-      /* Color blind safe color scheme from Adobe Color */
-      :root {
-        --primary-bg: #ffffff;
-        --secondary-bg: #f0f4f8;
-        --accent-bg: #d6e4f0;
-        --text-primary: #1a2332;
-        --text-secondary: #3e5266;
-        --link-color: #0066a6;
-        --link-hover: #004d7a;
-        --border-color: #b0bec5;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charles Barkley - Wikipedia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Hide only visually, but have it available for screen readers: */
+    .sr-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
 
-      * {
-        box-sizing: border-box;
-      }
+    /* Color blind safe color scheme from Adobe Color */
+    :root {
+      --primary-bg: #ffffff;
+      --secondary-bg: #f0f4f8;
+      --accent-bg: #d6e4f0;
+      --text-primary: #1a2332;
+      --text-secondary: #3e5266;
+      --link-color: #0066a6;
+      --link-hover: #004d7a;
+      --border-color: #b0bec5;
+    }
 
-      body {
-        margin: 0;
-        padding: 20px;
-        font-family: "Open Sans", sans-serif;
-        font-size: 18px;
-        line-height: 1.8;
-        color: var(--text-primary);
-        background-color: var(--primary-bg);
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      /* Auto-centering wrapper with max character width */
-      .page-wrapper {
-        max-width: 1400px;
-        margin: 0 auto;
-      }
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--text-primary);
+      background-color: var(--primary-bg);
+    }
 
-      header {
-        text-align: center;
-        margin-bottom: 30px;
-      }
+    /* Auto-centering wrapper with max character width */
+    .page-wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
 
-      h1,
-      h2,
-      h3 {
-        font-family: "Merriweather", serif;
-        color: var(--text-primary);
-        line-height: 1.4;
-        font-weight: 700;
-      }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5em;
-      }
+    h1,
+    h2,
+    h3 {
+      font-family: "Merriweather", serif;
+      color: var(--text-primary);
+      line-height: 1.4;
+      font-weight: 700;
+    }
 
-      h2 {
-        font-size: 2rem;
-        margin-top: 1.5em;
-        margin-bottom: 0.75em;
-      }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+    }
 
-      h3 {
-        font-size: 1.5rem;
-        margin-top: 1.25em;
-        margin-bottom: 0.5em;
-      }
+    h2 {
+      font-size: 2rem;
+      margin-top: 1.5em;
+      margin-bottom: 0.75em;
+    }
 
-      nav {
-        background-color: var(--secondary-bg);
-        padding: 25px;
-        margin-bottom: 30px;
-        border-radius: 8px;
-        border: 1px solid var(--border-color);
-      }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 1.25em;
+      margin-bottom: 0.5em;
+    }
 
-      nav h2 {
-        margin-top: 0;
-        font-size: 1.5rem;
-      }
+    nav {
+      background-color: var(--secondary-bg);
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
 
-      nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
+    nav h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
 
-      nav li {
-        margin-bottom: 12px;
-      }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-      nav ul ul {
-        margin-left: 20px;
-        margin-top: 10px;
-      }
+    nav li {
+      margin-bottom: 12px;
+    }
 
-      nav a {
-        text-decoration: none;
-        color: var(--link-color);
-        font-weight: 600;
-      }
+    nav ul ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
 
-      nav a:hover,
-      nav a:focus {
-        text-decoration: underline;
-        color: var(--link-hover);
-      }
+    nav a {
+      text-decoration: none;
+      color: var(--link-color);
+      font-weight: 600;
+    }
 
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+      color: var(--link-hover);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    aside {
+      background-color: var(--secondary-bg);
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      font-size: 0.95rem;
+    }
+
+    aside dt {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 15px;
+    }
+
+    aside dd {
+      margin-left: 0;
+      margin-bottom: 10px;
+      color: var(--text-secondary);
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    aside li {
+      margin-bottom: 8px;
+    }
+
+    /* Content wrapper for optimal line length */
+    article {
+      max-width: 75ch;
+      /* ~100 characters with current font */
+    }
+
+    article p,
+    article li {
+      max-width: 75ch;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    p {
+      margin-bottom: 1.2em;
+    }
+
+    strong {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    figure {
+      margin: 1.5em 0;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--text-secondary);
+      margin-top: 8px;
+    }
+
+    .infobox-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .medals {
+      margin-top: 20px;
+    }
+
+    .medals h3 {
+      font-size: 1.1rem;
+      margin-top: 0;
+    }
+
+    .medal-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      color: var(--text-secondary);
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 900px) {
       main {
-        display: grid;
-        grid-template-columns: 320px 1fr;
-        gap: 40px;
-        align-items: start;
+        grid-template-columns: 1fr;
       }
 
       aside {
-        background-color: var(--secondary-bg);
-        padding: 20px;
-        border-radius: 8px;
-        border: 1px solid var(--border-color);
-        font-size: 0.95rem;
+        order: -1;
       }
 
-      aside dt {
-        font-weight: 600;
-        color: var(--text-primary);
-        margin-top: 15px;
+      body {
+        font-size: 16px;
       }
 
-      aside dd {
-        margin-left: 0;
-        margin-bottom: 10px;
-        color: var(--text-secondary);
+      h1 {
+        font-size: 2rem;
       }
 
-      aside ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+      h2 {
+        font-size: 1.75rem;
       }
 
-      aside li {
-        margin-bottom: 8px;
+      h3 {
+        font-size: 1.35rem;
       }
+    }
+  </style>
+</head>
 
-      /* Content wrapper for optimal line length */
-      article {
-        max-width: 75ch; /* ~100 characters with current font */
-      }
+<body>
+  <header>
+    <h1>Charles Barkley</h1>
+  </header>
 
-      article p,
-      article li {
-        max-width: 75ch;
-      }
+  <nav>
+    <h2>Contents</h2>
+    <ul>
+      <li><a href="#early-life">Early life</a></li>
+      <li><a href="#college-career">College career</a></li>
+      <li>
+        <a href="#professional-career">Professional career</a>
+        <ul>
+          <li>
+            <a href="#philadelphia-76ers">Philadelphia 76ers (1984–1992)</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 
-      section {
-        margin-bottom: 40px;
-      }
+  <main>
+    <aside>
+      <figure>
+        <img src="barkley-pic.jpg" alt="Charles Barkley in 2019" class="infobox-image">
+        <figcaption>Barkley in 2019</figcaption>
+      </figure>
 
-      p {
-        margin-bottom: 1.2em;
-      }
+      <dl>
+        <dt>Personal information</dt>
+        <dd>
+          <dl>
+            <dt>Born</dt>
+            <dd>February 20, 1963 (age 62)<br>Leeds, Alabama, U.S.</dd>
 
-      strong {
-        font-weight: 600;
-        color: var(--text-primary);
-      }
+            <dt>Listed height</dt>
+            <dd>6 ft 6 in (1.98 m)</dd>
 
-      figure {
-        margin: 1.5em 0;
-      }
+            <dt>Listed weight</dt>
+            <dd>252 lb (114 kg)</dd>
+          </dl>
+        </dd>
 
-      figcaption {
-        font-size: 0.9rem;
-        font-style: italic;
-        color: var(--text-secondary);
-        margin-top: 8px;
-      }
+        <dt>Career information</dt>
+        <dd>
+          <dl>
+            <dt>High school</dt>
+            <dd>Leeds (Leeds, Alabama)</dd>
 
-      .infobox-image {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        border-radius: 4px;
-      }
+            <dt>College</dt>
+            <dd>Auburn (1981–1984)</dd>
 
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 4px;
-      }
+            <dt>NBA draft</dt>
+            <dd>1984: 1st round, 5th overall pick</dd>
 
-      .medals {
-        margin-top: 20px;
-      }
+            <dt>Drafted by</dt>
+            <dd>Philadelphia 76ers</dd>
 
-      .medals h3 {
-        font-size: 1.1rem;
-        margin-top: 0;
-      }
+            <dt>Playing career</dt>
+            <dd>1984–2000</dd>
 
-      .medal-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        color: var(--text-secondary);
-      }
+            <dt>Position</dt>
+            <dd>Power forward / small forward</dd>
 
-      /* Responsive design for smaller screens */
-      @media (max-width: 900px) {
-        main {
-          grid-template-columns: 1fr;
-        }
+            <dt>Number</dt>
+            <dd>34, 32, 4</dd>
+          </dl>
+        </dd>
 
-        aside {
-          order: -1;
-        }
-
-        body {
-          font-size: 16px;
-        }
-
-        h1 {
-          font-size: 2rem;
-        }
-
-        h2 {
-          font-size: 1.75rem;
-        }
-
-        h3 {
-          font-size: 1.35rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Charles Barkley</h1>
-    </header>
-
-    <nav>
-      <h2>Contents</h2>
-      <ul>
-        <li><a href="#early-life">Early life</a></li>
-        <li><a href="#college-career">College career</a></li>
-        <li>
-          <a href="#professional-career">Professional career</a>
+        <dt>Career history</dt>
+        <dd>
           <ul>
-            <li>
-              <a href="#philadelphia-76ers">Philadelphia 76ers (1984–1992)</a>
-            </li>
+            <li>1984–1992: Philadelphia 76ers</li>
+            <li>1992–1996: Phoenix Suns</li>
+            <li>1996–2000: Houston Rockets</li>
           </ul>
-        </li>
-      </ul>
-    </nav>
+        </dd>
 
-    <main>
-      <aside>
-        <figure>
-          <img
-            src="barkley-pic.jpg"
-            alt="Charles Barkley in 2019"
-            class="infobox-image"
-          />
-          <figcaption>Barkley in 2019</figcaption>
-        </figure>
+        <dt>Career highlights</dt>
+        <dd>
+          <ul>
+            <li>NBA Most Valuable Player (1993)</li>
+            <li>11× NBA All-Star (1987–1997)</li>
+            <li>NBA All-Star Game MVP (1991)</li>
+            <li>5× All-NBA First Team (1988–1991, 1993)</li>
+            <li>5× All-NBA Second Team (1986, 1987, 1992, 1994, 1995)</li>
+            <li>All-NBA Third Team (1996)</li>
+            <li>NBA All-Rookie First Team (1985)</li>
+            <li>NBA rebounding leader (1987)</li>
+            <li>NBA anniversary team (50th, 75th)</li>
+            <li>No. 34 retired by Philadelphia 76ers</li>
+            <li>No. 34 retired by Phoenix Suns</li>
+            <li>Third-team All-American – NABC (1984)</li>
+            <li>SEC Player of the Year (1984)</li>
+            <li>First-team All-SEC (1984)</li>
+            <li>2× Second-team All-SEC (1982, 1983)</li>
+            <li>SEC tournament MVP (1984)</li>
+            <li>No. 34 retired by Auburn Tigers</li>
+          </ul>
+        </dd>
 
-        <dl>
-          <dt>Personal information</dt>
-          <dd>
-            <dl>
-              <dt>Born</dt>
-              <dd>February 20, 1963 (age 62)<br />Leeds, Alabama, U.S.</dd>
+        <dt>Career NBA statistics</dt>
+        <dd>
+          <dl>
+            <dt>Points</dt>
+            <dd>23,757 (22.1 ppg)</dd>
 
-              <dt>Listed height</dt>
-              <dd>6 ft 6 in (1.98 m)</dd>
+            <dt>Rebounds</dt>
+            <dd>12,546 (11.7 rpg)</dd>
 
-              <dt>Listed weight</dt>
-              <dd>252 lb (114 kg)</dd>
-            </dl>
-          </dd>
+            <dt>Assists</dt>
+            <dd>4,215 (3.9 apg)</dd>
+          </dl>
+        </dd>
+      </dl>
 
-          <dt>Career information</dt>
-          <dd>
-            <dl>
-              <dt>High school</dt>
-              <dd>Leeds (Leeds, Alabama)</dd>
-
-              <dt>College</dt>
-              <dd>Auburn (1981–1984)</dd>
-
-              <dt>NBA draft</dt>
-              <dd>1984: 1st round, 5th overall pick</dd>
-
-              <dt>Drafted by</dt>
-              <dd>Philadelphia 76ers</dd>
-
-              <dt>Playing career</dt>
-              <dd>1984–2000</dd>
-
-              <dt>Position</dt>
-              <dd>Power forward / small forward</dd>
-
-              <dt>Number</dt>
-              <dd>34, 32, 4</dd>
-            </dl>
-          </dd>
-
-          <dt>Career history</dt>
-          <dd>
-            <ul>
-              <li>1984–1992: Philadelphia 76ers</li>
-              <li>1992–1996: Phoenix Suns</li>
-              <li>1996–2000: Houston Rockets</li>
-            </ul>
-          </dd>
-
-          <dt>Career highlights</dt>
-          <dd>
-            <ul>
-              <li>NBA Most Valuable Player (1993)</li>
-              <li>11× NBA All-Star (1987–1997)</li>
-              <li>NBA All-Star Game MVP (1991)</li>
-              <li>5× All-NBA First Team (1988–1991, 1993)</li>
-              <li>5× All-NBA Second Team (1986, 1987, 1992, 1994, 1995)</li>
-              <li>All-NBA Third Team (1996)</li>
-              <li>NBA All-Rookie First Team (1985)</li>
-              <li>NBA rebounding leader (1987)</li>
-              <li>NBA anniversary team (50th, 75th)</li>
-              <li>No. 34 retired by Philadelphia 76ers</li>
-              <li>No. 34 retired by Phoenix Suns</li>
-              <li>Third-team All-American – NABC (1984)</li>
-              <li>SEC Player of the Year (1984)</li>
-              <li>First-team All-SEC (1984)</li>
-              <li>2× Second-team All-SEC (1982, 1983)</li>
-              <li>SEC tournament MVP (1984)</li>
-              <li>No. 34 retired by Auburn Tigers</li>
-            </ul>
-          </dd>
-
-          <dt>Career NBA statistics</dt>
-          <dd>
-            <dl>
-              <dt>Points</dt>
-              <dd>23,757 (22.1 ppg)</dd>
-
-              <dt>Rebounds</dt>
-              <dd>12,546 (11.7 rpg)</dd>
-
-              <dt>Assists</dt>
-              <dd>4,215 (3.9 apg)</dd>
-            </dl>
-          </dd>
-        </dl>
-
-        <div class="medals">
-          <h3>Medals</h3>
-          <div class="medal-item">
-            <span>1992 Barcelona: Men's basketball</span>
-          </div>
-          <div class="medal-item">
-            <span>1996 Atlanta: Men's basketball</span>
-          </div>
-          <div class="medal-item">
-            <span>1992 Portland: Men's basketball</span>
-          </div>
+      <div class="medals">
+        <h3>Medals</h3>
+        <div class="medal-item">
+          <span>1992 Barcelona: Men's basketball</span>
         </div>
-      </aside>
+        <div class="medal-item">
+          <span>1996 Atlanta: Men's basketball</span>
+        </div>
+        <div class="medal-item">
+          <span>1992 Portland: Men's basketball</span>
+        </div>
+      </div>
+    </aside>
 
-      <article>
-        <header>
-          <h1 class="sr-only">Charles Barkley Biography</h1>
-        </header>
+    <article>
+      <header>
+        <h2 class="sr-only">Charles Barkley Biography</h2>
+      </header>
+      <p>
+        <strong>Charles Wade Barkley</strong> (born February 20, 1963) is an
+        American former professional basketball player who is a television
+        analyst on TNT and CBS Sports. Nicknamed "Sir Charles", "the Bread
+        Truck", and "the Round Mound of Rebound", Barkley played 16 seasons in
+        the National Basketball Association (NBA). Though shorter than the
+        typical power forward, he used his strength and aggression to become
+        one of the NBA's best rebounders and scorers. Barkley was an 11-time
+        NBA All-Star, 11-time member of the All-NBA Team, and the 1993 NBA
+        Most Valuable Player (MVP). He was named to the NBA's 50th and 75th
+        anniversary teams.
+      </p>
+
+      <p>
+        An All-American at Auburn University, Barkley was drafted as a junior
+        by the Philadelphia 76ers with the fifth pick of the 1984 NBA draft.
+        In his rookie season, Barkley was named to the All-Rookie First Team
+        in 1985. In the 1986–87 season, Barkley led the league in rebounding
+        average and earned his first rebounding title. He was named the
+        All-Star Game MVP in 1991, and in 1993 with the Phoenix Suns, he was
+        voted the league's MVP while leading the team to the NBA Finals. He
+        also competed in the 1992 and 1996 Olympic Games, winning two gold
+        medals as a member of the U.S. national team. In 2000, Barkley retired
+        as the fourth player in NBA history to achieve 20,000 points, 10,000
+        rebounds, and 4,000 assists.
+      </p>
+
+      <p>
+        Barkley is a two-time inductee into the Naismith Memorial Basketball
+        Hall of Fame, inducted in 2006 for his individual career and in 2010
+        as a member of the 1992 Olympic "Dream Team".
+      </p>
+
+      <section id="early-life">
+        <h2>Early life</h2>
         <p>
-          <strong>Charles Wade Barkley</strong> (born February 20, 1963) is an
-          American former professional basketball player who is a television
-          analyst on TNT and CBS Sports. Nicknamed "Sir Charles", "the Bread
-          Truck", and "the Round Mound of Rebound", Barkley played 16 seasons in
-          the National Basketball Association (NBA). Though shorter than the
-          typical power forward, he used his strength and aggression to become
-          one of the NBA's best rebounders and scorers. Barkley was an 11-time
-          NBA All-Star, 11-time member of the All-NBA Team, and the 1993 NBA
-          Most Valuable Player (MVP). He was named to the NBA's 50th and 75th
-          anniversary teams.
+          Barkley was born in Leeds, Alabama, 17 miles (27 km) east of
+          Birmingham and grew up there. He was the first black baby born at a
+          segregated, all-white town hospital and was in the first group of
+          black students at his elementary school.
         </p>
-
         <p>
-          An All-American at Auburn University, Barkley was drafted as a junior
-          by the Philadelphia 76ers with the fifth pick of the 1984 NBA draft.
-          In his rookie season, Barkley was named to the All-Rookie First Team
-          in 1985. In the 1986–87 season, Barkley led the league in rebounding
-          average and earned his first rebounding title. He was named the
-          All-Star Game MVP in 1991, and in 1993 with the Phoenix Suns, he was
-          voted the league's MVP while leading the team to the NBA Finals. He
-          also competed in the 1992 and 1996 Olympic Games, winning two gold
-          medals as a member of the U.S. national team. In 2000, Barkley retired
-          as the fourth player in NBA history to achieve 20,000 points, 10,000
-          rebounds, and 4,000 assists.
+          His parents divorced when he was young after his father abandoned
+          the family, which included younger brother Darryl Barkley. His
+          mother remarried and they had a son, John Glenn. Another brother,
+          Rennie, died in infancy. His stepfather was killed in an accident
+          when Charles was 11 years old.
         </p>
-
         <p>
-          Barkley is a two-time inductee into the Naismith Memorial Basketball
-          Hall of Fame, inducted in 2006 for his individual career and in 2010
-          as a member of the 1992 Olympic "Dream Team".
+          Barkley attended Leeds High School. As a junior, he stood 5 ft 10 in
+          (1.78 m) and weighed 220 pounds (100 kg). He failed to make the
+          varsity team and was named as a reserve. However, during the summer
+          Barkley grew to 6 ft 4 in (1.93 m) and earned a starting position on
+          the varsity as a senior. He averaged 19.1 points and 17.9 rebounds
+          per game and led his team to a 26–3 record en route to the state
+          semi-finals.
         </p>
+        <p>
+          Despite his improvement, Barkley received no attention from college
+          scouts until the state high school semi-finals, where he scored 26
+          points against Alabama's most highly recruited player, Bobby Lee
+          Hurt. An assistant to Auburn University's head coach, Sonny Smith,
+          was at the game and reported seeing, "a fat guy... who can play like
+          the wind". Barkley was soon recruited by Smith and majored in
+          business management while attending Auburn University.
+        </p>
+      </section>
 
-        <section id="early-life">
-          <h2>Early life</h2>
-          <p>
-            Barkley was born in Leeds, Alabama, 17 miles (27 km) east of
-            Birmingham and grew up there. He was the first black baby born at a
-            segregated, all-white town hospital and was in the first group of
-            black students at his elementary school.
-          </p>
-          <p>
-            His parents divorced when he was young after his father abandoned
-            the family, which included younger brother Darryl Barkley. His
-            mother remarried and they had a son, John Glenn. Another brother,
-            Rennie, died in infancy. His stepfather was killed in an accident
-            when Charles was 11 years old.
-          </p>
-          <p>
-            Barkley attended Leeds High School. As a junior, he stood 5 ft 10 in
-            (1.78 m) and weighed 220 pounds (100 kg). He failed to make the
-            varsity team and was named as a reserve. However, during the summer
-            Barkley grew to 6 ft 4 in (1.93 m) and earned a starting position on
-            the varsity as a senior. He averaged 19.1 points and 17.9 rebounds
-            per game and led his team to a 26–3 record en route to the state
-            semi-finals.
-          </p>
-          <p>
-            Despite his improvement, Barkley received no attention from college
-            scouts until the state high school semi-finals, where he scored 26
-            points against Alabama's most highly recruited player, Bobby Lee
-            Hurt. An assistant to Auburn University's head coach, Sonny Smith,
-            was at the game and reported seeing, "a fat guy... who can play like
-            the wind". Barkley was soon recruited by Smith and majored in
-            business management while attending Auburn University.
-          </p>
-        </section>
+      <section id="college-career">
+        <h2>College career</h2>
+        <figure>
+          <img src="barkley-award.jpg" alt="Barkley with Sonny Smith, his coach at Auburn University">
+          <figcaption>
+            Barkley with Sonny Smith, his coach at Auburn University.
+          </figcaption>
+        </figure>
+        <p>
+          Barkley played collegiate basketball for the Auburn Tigers for three
+          seasons. Although he struggled to control his weight, he excelled as
+          a player and led the SEC in rebounding each year.
+        </p>
+        <p>
+          He became a popular crowd-pleaser, exciting the fans with dunks and
+          blocked shots that belied his lack of height and overweight frame.
+          It was not uncommon to see the hefty Barkley grab a defensive
+          rebound and, instead of passing, dribble the entire length of the
+          court and finish at the opposite end with a two-handed dunk. His
+          physical size and skills ultimately earned him the nickname "The
+          Round Mound of Rebound" and the "Crisco Kid".
+        </p>
+        <p>
+          During his college career, Barkley played center, despite being
+          shorter than the average center. His height, officially listed as 6
+          ft 6 in (1.98 m), is stated as 6 ft 4 in (1.93 m) in his book,
+          <em>I May Be Wrong but I Doubt It</em>. He became a member of
+          Auburn's All-Century team and still holds the Auburn record for
+          career field goal percentage with 62.6%.
+        </p>
+        <p>
+          He received numerous awards, including Southeastern Conference (SEC)
+          Player of the Year (1984), three All-SEC selections and one Second
+          Team All-American selection.
+        </p>
+        <p>
+          In Barkley's three-year college career, he averaged 14.1 points on
+          62.6% field goal shooting, 9.6 rebounds, 1.6 assists, and 1.7 blocks
+          per game. In 1984, he led the Tigers to their first NCAA tournament
+          in school history and finished with 23 points on 80% field goal
+          shooting, 17 rebounds, four assists, two steals, and two blocks.
+          Auburn retired Barkley's No. 34 jersey on March 3, 2001.
+        </p>
+      </section>
 
-        <section id="college-career">
-          <h2>College career</h2>
+      <section id="professional-career">
+        <h2>Professional career</h2>
+
+        <section id="philadelphia-76ers">
+          <h3>Philadelphia 76ers (1984–1992)</h3>
           <figure>
-            <img
-              src="barkley-award.jpg"
-              alt="Barkley with Sonny Smith, his coach at Auburn University"
-            />
-            <figcaption>
-              Barkley with Sonny Smith, his coach at Auburn University.
-            </figcaption>
+            <img src="barkley-shot.jpg" alt="Barkley in 1991">
+            <figcaption>Barkley in 1991</figcaption>
           </figure>
           <p>
-            Barkley played collegiate basketball for the Auburn Tigers for three
-            seasons. Although he struggled to control his weight, he excelled as
-            a player and led the SEC in rebounding each year.
+            Barkley left before his final year at Auburn and made himself
+            eligible for the 1984 NBA draft. He was selected with the fifth
+            pick in the first round by the Philadelphia 76ers, two slots after
+            the Chicago Bulls drafted Michael Jordan. He joined a veteran team
+            that included Julius Erving, Moses Malone, and Maurice Cheeks,
+            players who had taken Philadelphia to the 1983 NBA championship.
+            Under the tutelage of Malone, Barkley was able to manage his
+            weight and learned to prepare and condition himself properly for a
+            game; Barkley cited Malone as the most influential player of his
+            career, and he often referred to him as "Dad".
           </p>
           <p>
-            He became a popular crowd-pleaser, exciting the fans with dunks and
-            blocked shots that belied his lack of height and overweight frame.
-            It was not uncommon to see the hefty Barkley grab a defensive
-            rebound and, instead of passing, dribble the entire length of the
-            court and finish at the opposite end with a two-handed dunk. His
-            physical size and skills ultimately earned him the nickname "The
-            Round Mound of Rebound" and the "Crisco Kid".
+            He averaged 14.0 points and 8.6 rebounds per game during the
+            regular season and earned a berth on the All-Rookie Team. In the
+            postseason, the Sixers advanced to the Eastern Conference Finals
+            but were defeated in five games by the Boston Celtics.
           </p>
           <p>
-            During his college career, Barkley played center, despite being
-            shorter than the average center. His height, officially listed as 6
-            ft 6 in (1.98 m), is stated as 6 ft 4 in (1.93 m) in his book,
-            <em>I May Be Wrong but I Doubt It</em>. He became a member of
-            Auburn's All-Century team and still holds the Auburn record for
-            career field goal percentage with 62.6%.
+            During his second year, Barkley improved his game under the
+            leadership of Moses Malone during the off-season with his
+            workouts, in the process he became the team's leading rebounder
+            and number two scorer, averaging 20.0 points and 12.8 rebounds per
+            game.
           </p>
           <p>
-            He received numerous awards, including Southeastern Conference (SEC)
-            Player of the Year (1984), three All-SEC selections and one Second
-            Team All-American selection.
-          </p>
-          <p>
-            In Barkley's three-year college career, he averaged 14.1 points on
-            62.6% field goal shooting, 9.6 rebounds, 1.6 assists, and 1.7 blocks
-            per game. In 1984, he led the Tigers to their first NCAA tournament
-            in school history and finished with 23 points on 80% field goal
-            shooting, 17 rebounds, four assists, two steals, and two blocks.
-            Auburn retired Barkley's No. 34 jersey on March 3, 2001.
+            He became the Sixers' starting power forward and helped lead his
+            team into the playoffs, averaging 25.0 points on .578 shooting
+            from the field and 15.8 rebounds per game. Despite his efforts,
+            Philadelphia was defeated 4–3 by the Milwaukee Bucks in the
+            Eastern Conference Semifinals. He was named to the All-NBA Second
+            Team.
           </p>
         </section>
+      </section>
+    </article>
+  </main>
+</body>
 
-        <section id="professional-career">
-          <h2>Professional career</h2>
-
-          <section id="philadelphia-76ers">
-            <h3>Philadelphia 76ers (1984–1992)</h3>
-            <figure>
-              <img src="barkley-shot.jpg" alt="Barkley in 1991" />
-              <figcaption>Barkley in 1991</figcaption>
-            </figure>
-            <p>
-              Barkley left before his final year at Auburn and made himself
-              eligible for the 1984 NBA draft. He was selected with the fifth
-              pick in the first round by the Philadelphia 76ers, two slots after
-              the Chicago Bulls drafted Michael Jordan. He joined a veteran team
-              that included Julius Erving, Moses Malone, and Maurice Cheeks,
-              players who had taken Philadelphia to the 1983 NBA championship.
-              Under the tutelage of Malone, Barkley was able to manage his
-              weight and learned to prepare and condition himself properly for a
-              game; Barkley cited Malone as the most influential player of his
-              career, and he often referred to him as "Dad".
-            </p>
-            <p>
-              He averaged 14.0 points and 8.6 rebounds per game during the
-              regular season and earned a berth on the All-Rookie Team. In the
-              postseason, the Sixers advanced to the Eastern Conference Finals
-              but were defeated in five games by the Boston Celtics.
-            </p>
-            <p>
-              During his second year, Barkley improved his game under the
-              leadership of Moses Malone during the off-season with his
-              workouts, in the process he became the team's leading rebounder
-              and number two scorer, averaging 20.0 points and 12.8 rebounds per
-              game.
-            </p>
-            <p>
-              He became the Sixers' starting power forward and helped lead his
-              team into the playoffs, averaging 25.0 points on .578 shooting
-              from the field and 15.8 rebounds per game. Despite his efforts,
-              Philadelphia was defeated 4–3 by the Milwaukee Bucks in the
-              Eastern Conference Semifinals. He was named to the All-NBA Second
-              Team.
-            </p>
-          </section>
-        </section>
-      </article>
-    </main>
-  </body>
 </html>
